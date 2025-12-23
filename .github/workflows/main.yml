@@ -18,8 +18,8 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN}}
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/daliaosama-2023040416 .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/menna fathy .
 
       - name: Push Image to DockerHub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/daliaosama-2023040416
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/menna fathy
 
